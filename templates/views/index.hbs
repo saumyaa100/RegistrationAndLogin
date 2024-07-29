@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>E-commerce Landing Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #fff;
+        }
+        .hero {
+            background: url('https://i.pinimg.com/564x/b5/3b/f1/b53bf1fd71eeadcf0ac907ec47a933cf.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            animation: fadeInDown 1.5s ease;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            animation: fadeInUp 1.5s ease;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .products {
+            padding: 50px 0;
+        }
+        .product {
+            text-align: center;
+            padding: 20px;
+        }
+        .product img {
+            width: 100%;
+            transition: transform 0.3s;
+        }
+        .product img:hover {
+            transform: scale(1.1);
+        }
+        .product h5 {
+            margin: 15px 0 10px;
+        }
+        .product p {
+            color: #777;
+        }
+        .testimonials {
+            background: #f8f9fa;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .testimonial {
+            margin: 20px 0;
+        }
+        .testimonial img {
+            width: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .newsletter {
+            background: #343a40;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background: #f8c146;
+            color: #343a40;
+            font-weight: bold;
+        }
+        .footer {
+            background: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+{{>navbar}}
+
+<section class="hero">
+    <div class="container">
+        <h1 style="font-weight: bold;">Welcome to ShopEasy</h1>
+        <p>Your one-stop shop for everything you need</p>
+        <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+    </div>
+</section>
+
+<section class="products container">
+    <div class="row">
+        <div class="col-md-4 product">
+            <img src="https://i.pinimg.com/474x/32/4c/7b/324c7b038ac3eecb8736d1d04c56e01f.jpg" alt="Product 1">
+            <h5>Product 1</h5>
+            <p>$19.99</p>
+        </div>
+        <div class="col-md-4 product">
+            <img src="https://i.pinimg.com/736x/f3/72/e5/f372e5e3aa76c1fe1676687d32bf647a.jpg" alt="Product 2">
+            <h5>Product 2</h5>
+            <p>$29.99</p>
+        </div>
+        <div class="col-md-4 product">
+            <img src="https://i.pinimg.com/736x/8d/71/ea/8d71ea9ed1b42af63e8f681d19f55222.jpg" alt="Product 3">
+            <h5>Product 3</h5>
+            <p>$39.99</p>
+        </div>
+        <div class="col-md-4 product">
+            <img src="https://i.pinimg.com/236x/46/e3/9a/46e39ad10e81f63a7c4ebc2a0edae6cb.jpg" alt="Product 3">
+            <h5>Product 4</h5>
+            <p>$45.99</p>
+        </div>
+         <div class="col-md-4 product">
+            <img src="https://i.pinimg.com/736x/08/b4/1b/08b41b63a234c366d4b32083058af71c.jpg" alt="Product 3">
+            <h5>Product 5</h5>
+            <p>$60.99</p>
+        </div>
+         
+         <div class="col-md-4 product">
+            <img src="https://i.pinimg.com/474x/75/49/cf/7549cff97b2764309782bf2ef9640046.jpg" alt="Product 3">
+            <h5>Product 6</h5>
+            <p>$42.99</p>
+        </div>
+         <div class="col-md-4 product">
+            <img src="https://i.pinimg.com/736x/50/bc/6e/50bc6e2a65cff27cffdc3cc44716057b.jpg" alt="Product 3">
+            <h5>Product 7</h5>
+            <p>$80.99</p>
+        </div>
+         <div class="col-md-4 product">
+            <img src="https://i.pinimg.com/474x/d8/e6/0c/d8e60ce7c5981b657a61adda49e8cde9.jpg" alt="Product 3">
+            <h5>Product 8</h5>
+            <p>$55.99</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="row">
+            <div class="col-md-4 testimonial">
+                <img src="https://i.pinimg.com/236x/ad/57/b1/ad57b11e313616c7980afaa6b9cc6990.jpg" alt="Customer 1">
+                <p>"ShopEasy has the best products at the best prices. Highly recommend!"</p>
+                <p><strong>- Customer 1</strong></p>
+            </div>
+            <div class="col-md-4 testimonial">
+                <img src="https://i.pinimg.com/236x/5b/df/2c/5bdf2cc3988b110698ff4bf8adef80e0.jpg" alt="Customer 2">
+                <p>"Amazing service and fast delivery. I love shopping here!"</p>
+                <p><strong>- Customer 2</strong></p>
+            </div>
+            <div class="col-md-4 testimonial">
+                <img src="https://i.pinimg.com/236x/ad/57/b1/ad57b11e313616c7980afaa6b9cc6990.jpg" alt="Customer 3">
+                <p>"Great quality products and excellent customer support."</p>
+                <p><strong>- Customer 3</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <p>&copy; 2024 ShopEasy. All Rights Reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+nav{
+    background-color: rgb(205, 196, 196);
+    /* background-image: url('https://i.pinimg.com/564x/47/ff/4a/47ff4a90fd525686d36f057cf6cbbcb6.jpg'); */
+    /* background-position:left; */
+    background-position:center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    /* background-size: cover;  */
+    background-size: 10%;
+    color: black;
+    padding-top: 1em;
+    padding-bottom:0;;
+    text-align:end;
+    height: 80px;
+    width:100%;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+}
+nav a:hover{
+    color:rgb(34, 34, 83)violet;
+}
+nav ul{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    list-style-type: none;
+    font-size: large;
+    margin-right:100px;
+}
+ul li{
+    padding-top:9px;
+}
+ .forms{
+    background-color: #1e2833;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom:20px;
+    width: 50%;
+     padding-left:10em;   
+    padding-top:2.5em;    
+    border-radius: 5px;
+ }      
+ .forms input[type="text"], form input[type="password"] , form input[type="email"], form input[type="number"], form input[type="tel"], form select{
+    /* width: 40%; */
+    height:2%;
+    padding: 0.5em;
+    margin: 1em 0;
+    border-radius: 10px;
+    border: 1px solid #2f2fea;
+    font-size: 1em;
+ }
+ .forms label{
+    color:white;
+    font-size: larger;
+ }
+    .forms button{
+        width:30%;
+        padding: 1em;
+        padding-top:0.6em;
+        padding-bottom:0.6em;
+        border:4px solid black;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top:1em;
+        margin-bottom: 1em;
+        margin-left:100px;
+        /* margin-left:-20%; */
+
+    }
+    .forms button:hover{
+        cursor: pointer;
+        background-color: rgb(205, 200, 200);
+        /* background-color: yellow; */
+    }
+   .reg{
+    text-align: center;
+    color:#214a80;
+    font-size:60px;
+    font-weight:bold;
+    text-shadow:3px 3px 3px rgb(130, 128, 128);
+   }
+.login-dark {
+    height:1000px;
+    /* background:#475d62 url(../../assets/img/star-sky.jpg); */
+    background-size:cover;
+    position:relative;
+  }
+  
+  .login-dark form {
+    max-width:320px;
+    width:90%;
+    background-color:#1e2833;
+    padding:40px;
+    border-radius:4px;
+    transform:translate(-50%, -50%);
+    position:absolute;
+    top:28%;
+    left:50%;
+    color:#fff;
+    box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+  }
+  
+  .login-dark .illustration {
+    text-align:center;
+    padding:15px 0 20px;
+    font-size:100px;
+    color:#2980ef;
+  }
+  
+  .login-dark form .form-control {
+    background:none;
+    border:none;
+    border-bottom:1px solid #434a52;
+    border-radius:0;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+  }
+  
+  .login-dark form .btn-primary {
+    background:#214a80;
+    border:none;
+    border-radius:4px;
+    padding:11px;
+    box-shadow:none;
+    margin-top:26px;
+    text-shadow:none;
+    outline:none;
+  }
+  
+  .login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {
+    background:#214a80;
+    outline:none;
+  }
+  
+  .login-dark form .forgot {
+    display:block;
+    text-align:center;
+    font-size:12px;
+    color:#6f7a85;
+    opacity:0.9;
+    text-decoration:none;
+  }
+  
+  .login-dark form .forgot:hover, .login-dark form .forgot:active {
+    opacity:1;
+    text-decoration:none;
+  }
+  
+  .login-dark form .btn-primary:active {
+    transform:translateY(1px);
+  }
+  
+  
